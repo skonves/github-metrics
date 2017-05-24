@@ -12,7 +12,7 @@
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
-            "preLaunchTask": "recompile",
+            "preLaunchTask": "rebuild",
             "runtimeExecutable": null,
             "runtimeArgs": ["--nolazy"],
             "env": {
@@ -30,7 +30,7 @@
             "stopOnEntry": false,
             "args": ["--require", "source-map-support/register", "./.compiled/tests"],
             "cwd": "${workspaceRoot}",
-            "preLaunchTask": "recompile",
+            "preLaunchTask": "rebuild",
             "runtimeExecutable": null,
             "runtimeArgs": ["--nolazy"],
             "env": {

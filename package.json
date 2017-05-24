@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "eslint ./src ./tests",
     "lintfix": "eslint --fix ./src ./tests",
-    "recompile": "npm run clean && npm run compile",
+    "rebuild": "npm run clean && npm run build",
     "clean": "rm -rf .compiled && mkdir -p .compiled/src && mkdir -p .compiled/tests",
-    "compile": "babel src --out-dir .compiled/src && babel tests --out-dir .compiled/tests",
+    "build": "babel src --out-dir .compiled/src && babel tests --out-dir .compiled/tests",
     "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha tests"
   },
   "author": "Steve Konves",
