@@ -1,3 +1,6 @@
+[![travis](https://img.shields.io/travis/skonves/github-metrics.svg)](https://travis-ci.org/skonves/github-metrics)
+[![coveralls](https://img.shields.io/coveralls/skonves/github-metrics.svg)](https://coveralls.io/github/skonves/github-metrics)
+
 # Github Metrics
 
 Based off of https://github.com/skonves/esnext-reference.
