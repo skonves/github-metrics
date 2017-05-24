@@ -9,7 +9,8 @@
     "rebuild": "npm run clean && npm run build",
     "clean": "rm -rf .compiled && mkdir -p .compiled/src && mkdir -p .compiled/tests",
     "build": "babel src --out-dir .compiled/src && babel tests --out-dir .compiled/tests",
-    "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha tests"
+    "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha tests",
+	"coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "author": "Steve Konves",
   "license": "MIT",
@@ -24,6 +25,7 @@
     "babel-preset-stage-0": "^6.16.0",
 	"babel-register": "^6.24.1",
     "chai": "^3.5.0",
+	"coveralls": "^2.13.1",
 	"cross-env": "^4.0.0",
     "eslint": "^3.9.1",
     "eslint-plugin-babel": "^3.3.0",
