@@ -1,6 +1,6 @@
-# ES "Next" Reference
+# Github Metrics
 
-This project exists as a baseline for ES6/7 projects.  It is the product of multiple Node projects I have worked on in the past.
+Based off of https://github.com/skonves/esnext-reference.
 
 The easiest way to see it working is:
 
@@ -29,16 +29,3 @@ This project assumes VSCode as the IDE, although all the code and scripts should
 
 ### Tests
 Mocha is currently used for example tests, although any other framework could be swapped in.  Babel runs against the `/tests` folder and outputs to `/.compiled/tests`.  If you would like to replace mocha, you will need to replace the code in `/tests` and update the npm `test` script.  You will also need to update the `Launch Tests` configuration in `/.vscode/launch.json` if you want to continue supporting test debugging.
-
-## Using this code
-The easiest way that I have found to start a new project with this repo is to:
-
-1. Clone the repo
-1. Remove the `/.git` folder
-1. Run `git init`
-1. ???
-1. Profit
-
-FWIW, I have given up merging changes from this repo back into derived projects which is why I recommend blowing away and re-initializing the repo.  Manually adding changes back into derived projects has been a "less correct" yet much more practical approach. YMMV.
-
-Technically, this project is released under the MIT license which allows you to "use, copy, modify, merge, ..." this project regardless of what you do with the `/.git` folder.  But if you do recreate the repo, if nothing else, I would appreciate a link back to this repo.  Thanks!
